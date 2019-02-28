@@ -1,0 +1,21 @@
+1. The differences in functionality and purposes Client-Side and Server-Side code serves in a full-stack web application
+
+Client-side: front-end code, runs on client's computer. Its duties are to send HTTP request and render response data.
+
+Server-side: back-end code, runs on server. Its duties are to handle HTTP request and send response.
+
+2. Nodes' rise in popularity and use because it uses JavaScript to build full-stack application.
+
+"Isomorphic JavaScript programming" means that render happens in both server and client side.
+
+Companies using Node.js: Walmart, Trello and PayPal.
+
+3. A diagram of full stack application:
+Browser                Application Server               Database
+    |                         |                             |
+    |                         |                             |   
+    UI                  Vaadin framework                
+    HTML                    Java Code
+    CSS                                <----->     Data binding support 
+    JS
+    Vaadin engine <----->
