@@ -1,0 +1,9 @@
+1. fs core module is important for Node development because it serves to access file system.
+
+2. Syn method: blocking, the code run on sequential order.
+Asynch method: non-blocking, the code does not wait for the current code to excute.
+
+3. Modules, or libaries, simply are blocks of code, which are easy to maintain and organize when it comes to the complexity of a project.
+
+4. Libraries such as fs are used in Node programming since npm is an open plafform having tons of libraries that potentially expertise your node application.
+

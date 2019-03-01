@@ -1,0 +1,5 @@
+1. npm stands for Node.js Package Manager
+It contains a file bundle which you can include in the application and manage dependencies.
+
+2.
+Package.json is the heart of Node.js, it holds metadata that structures your project.
