@@ -1,0 +1,9 @@
+1. Node module: a set of functions you want to include in your application, can be considered as JavaScript libraries.
+
+2. The difference between exports and module.exports: 
+module.exports : the variable gets returned from require(), can be reassigned by anything.
+
+exports : a reference to module.exports, can nor reassign the object module.exports.
+
+3. exports is recommended because it is more convenient (less code) and working with its properties is safe.
+
