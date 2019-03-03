@@ -1,0 +1,57 @@
+1. readdirSync : a synchronous and blocking function
+readdir : an asynchronous and non-blocking function
+
+2. Event loop is a system to process tasks sequentially, it handles asynchronous events by arranging them in event queue and askes OS to notify when the event is ready to process while processing other in the queue.
+
+3. const fs = require('fs');
+const file = fs.readFileSync('foo.txt');
+console.log(file.toString());
+
+This is synchronous and blocking program.
+
+4. const fs = require('fs');
+fs.readFile('foo.txt', (err, file) => {
+ if (err) throw err;
+ console.log(file.toString());
+});
+console.log("test");
+
+This is asynchronous and non-blocking program.
+
+5. const fs = require('fs');
+fs.readFile('foo.txt', (err, file) => {
+ if (err) throw err;
+ console.log("A");
+ console.log("B")
+});
+console.log("C");
+
+console.log statements wil execute in order: console.log("C"), console.log("A"), console.log("B")
+
+6. function greeting() {
+ setTimeout(() => {
+   console.log("friend");
+ }, 100);
+}
+
+function hello(){
+ console.log("hello");
+}
+
+greeting();
+hello();
+
+Since setTimeout() is asynchronous, the sequence of functions will be hello() first and gretting() will be executed after 0.1 seconds.
+
+7. 
+function greeting(name) {
+  alert('Welcome ' + name);
+}
+
+function userInput(callback) {
+  var name = prompt('Enter your name.');
+  callback(name);
+}
+
+userInput(greeting);
+
