@@ -1,0 +1,7 @@
+1. We can access the DevTools for Node in Chrome through about://inspect
+
+2. The main differences between the regular Chrome DevTools and the DevTools for Node: DevTools for Node actual listens to your Node program. 
+
+3. Using the built-in Node debug tool, you use command c / con to continue the execution of your code.
+
+4. You put in your code to set a breakpoint by using debugger statement.
